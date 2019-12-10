@@ -21,6 +21,10 @@ public class Conteneur implements Serializable {
         return GestionDistances.Cities.get(this.destination);
     }
 
+    public Integer getMasse (){
+        return this.poids;
+    }
+
     @Override
     public String toString() {
         return "Conteneur expédié par la société " +
